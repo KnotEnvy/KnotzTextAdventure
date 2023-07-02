@@ -1,4 +1,4 @@
-import sqlite3 from 'sqlite3';
+import sqlite3 from './sqlite3.js';
 
 const { verbose } = sqlite3;
 const db = verbose();
