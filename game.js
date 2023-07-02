@@ -1,5 +1,3 @@
-
-// Import necessary modules and classes
 import User from './user.js';
 import Database from './database.js';
 import generateText from './openai.js';
@@ -186,8 +184,3 @@ document.getElementById('command-input').addEventListener('keypress', (event) =>
 document.getElementById('save-button').addEventListener('click', () => {
   game.saveGame();
 });
-
-
-  
-  
-  
