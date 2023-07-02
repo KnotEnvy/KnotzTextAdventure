@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hacktivate Nation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="sidebar">
+      <h2>Player Stats</h2>
+        <p id="level">Level: 0</p>
+        <p id="experience">Experience: 0</p>
+        <p id="gold">Gold: 0</p>
+        <p id="items">Items: None</p>
+        <p id="magic">Magic: None</p>
+    </div>
+    <div id="game-area">
+        <div id="health-bar">
+            <div id="health"></div>
+          </div>
+          
+      <textarea id="game-output" readonly></textarea>
+      <form id="command-form">
+        <input type="text" id="command-input">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <button id="save-button">Save Game</button>
+
+  <script type="module" src="user.js"></script>
+  <script type="module" src="database.js"></script>
+  <script type="module" src="openai.js"></script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
